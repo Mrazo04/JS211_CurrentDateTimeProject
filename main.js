@@ -16,10 +16,22 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 
+const numberToString = () => {
+  let numberVal = document.getElementById("numberToStr").value;
 
+  document.getElementById("displayNumber").innerHTML = numberVal;
+  //console.log("The number" + ' ' + document.getElementById("numberToStr").value + ' ' + "is now a string")
+  console.log("The number" + ' ' + document.getElementById("numberToStr").value.toString() + ' ' + "is now a string")
+  
+} 
+
+numberToString(this)
 
 // Write a JavaScript program to convert a string to the number.
-
+ const stringToNumber = (inputString) => {
+  console.log(Number(inputString))
+ }
+stringToNumber("23")
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -30,21 +42,59 @@ const displayDate = () => {
   // * NaN
   // * String
   
+const variableOne = 5
+const variableTwo = true
+const variableThree = NaN
+const variableFour = null
+const variableFive = undefined
+const variableSix = "Mickey"
 
-  
+console.log(typeof variableOne)
+console.log(typeof variableTwo)
+console.log(typeof variableThree)
+console.log(typeof variableFour)
+console.log(typeof variableFive)
+console.log(typeof variableSix)
+
+
 // Write a JavaScript program that adds 2 numbers together.
 
+const addTwoNumbers = (num1, num2) => {
+  return num1 + num2
+}
+
+addTwoNumbers
+
+console.log("The total is:" + addTwoNumbers(23, 43))
 
 
 // Write a JavaScript program that runs only when 2 things are true.
+let myVariable = true
+let yourVariable = 25
+
+if(myVariable && yourVariable ){
+  console.log("Both are true")
+};
 
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
+const tVariable = 34
+const fVariable = " "
 
+if(tVariable || fVariable){
+  console.log("One is true")
+}
 
 
 // Write a JavaScript program that runs when both things are not true.  
+
+myVariable = false
+yourVariable = " "
+
+if (!myVariable && yourVariable){
+  console.log("Neither are true")
+}
 
 // ***************************
 //         PART TWO
